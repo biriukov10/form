@@ -8,23 +8,24 @@
   <title>Form</title>
 </head>
 <body>
-  <form action="#" class="form">
-    <fieldset>
-      <label for="">Name</label>
-      <input type="text" placeholder="Full name">
-      <label for="">Email</label>
-      <input type="mail" placeholder="Email adress">
-      <label for="">Number of Passes</label>
-      <select>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-      </select>
-      <textarea name="text" cols="30" rows="10"></textarea>
-      <button>purshare</button>
+  <form action="#" class="ba-form" autocomplete="on">
+    <fieldset class="ba-form-wrapper">
+        <span class="ba-form-wrapper__text">Name</span>
+        <input class="ba-form-wrapper__btn" name="username" type="text" placeholder="Full name">
+        <span class="ba-form-wrapper__text">Email</span>
+        <input class="ba-form-wrapper__btn" name="e-mail" type="mail" placeholder="Email adress" required>
+        <span class="ba-form-wrapper__text">Number of Passes</span>
+        <select class="ba-form-number">
+          <option class="ba-form-number__item" value="1">1</option>
+          <option class="ba-form-number__item" value="2">2</option>
+          <option class="ba-form-number__item" value="3">3</option>
+          <option class="ba-form-number__item" value="4">4</option>
+          <option class="ba-form-number__item" value="5">5</option>
+          <option class="ba-form-number__item" value="6">6</option>
+        </select>
+        <span class="ba-form-wrapper__text">Coments</span>
+        <textarea class="ba-form-wrapper__area" name="text" name="comment"></textarea>
+      <button class="ba-form-wrapper__button">purshare</button>
     </fieldset>
   </form>
 </body>
